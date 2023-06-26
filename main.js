@@ -45,16 +45,15 @@ async function displayImages() {
 				imgCont.appendChild(imageElement);
 				galleryContainer.appendChild(imgCont);
 
-				// Intersection Observer for slide animation
 				const options = {
-					threshold: 0.3, // Adjust the threshold as per your preference
+					threshold: 0.3,
 				};
 
 				const observer = new IntersectionObserver((entries) => {
 					entries.forEach((entry) => {
 						if (entry.isIntersecting) {
 							entry.target.classList.add('slide-in');
-							observer.unobserve(entry.target); // Stop observing after the animation is applied
+							observer.unobserve(entry.target);
 						}
 					});
 				}, options);
@@ -64,7 +63,6 @@ async function displayImages() {
 		}
 	} catch (error) {
 		console.error('Error displaying images:', error);
-		// Handle the error gracefully (e.g., display an error message to the user)
 	}
 }
 
