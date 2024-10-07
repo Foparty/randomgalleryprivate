@@ -39,7 +39,7 @@ async function displayImages() {
 			imagesData.forEach((image) => {
 				const imgCont = createImageContainer();
 				imgCont.style.gridColumn = `span ${Math.floor(Math.random() * 4) + 1}`;
-				imgCont.style.gridRow = `span ${Math.floor(Math.random() * 6) + 1}`;
+				imgCont.style.gridRow = `span ${Math.floor(Math.random() * 6) + 2}`;
 
 				const imageElement = createImageElement(image.urls.regular);
 				imgCont.appendChild(imageElement);
