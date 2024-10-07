@@ -1,5 +1,7 @@
 # Random Grid on reload photo gallery
 
+[visit live preview](https://random-gallery.netlify.app)
+
 ![project cover image](img/cover.png)
 
 project done in Vanilla HTML - CSS - JavaScript using Vite.
